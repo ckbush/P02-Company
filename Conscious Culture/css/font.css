@@ -1,9 +1,9 @@
 @font-face {
 font-family: "Circular Std";
-src: url("css/font/CircularStd-Bold.otf") format("opentype");
+src: url("../font/CircularStd-Bold.otf") format("opentype");
 }
 
-@font-face {
-  font-family: "Helvetica";
-  src: url("css/font/HelveticaNeueLT-LightExt.otf") format("opentype");
-}
+/*@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../font/HelveticaNeueLT-LightExt.otf") format("opentype");
+}*/
