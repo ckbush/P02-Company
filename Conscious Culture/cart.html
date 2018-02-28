@@ -32,7 +32,7 @@
             <a href="about.html" class="main-nav-item">About</a>
           </div>
         </nav>
-        <a href="index.html" id="cart" class="grid-col-2of12">
+        <a href="cart.html" id="cart" class="grid-col-2of12">
           <img src="img/cart.jpg" alt="Cart icon"></a>
         </div>
       </header>
@@ -42,8 +42,168 @@
         <h2>Cart</h2>
       </div>
 
+      <div class="cart-section">
+        <div class="grid-row">
+
+          <div class="grid-col-3of3">
+            <!--item 1-->
+            <div class="cart-item">
+              <div class="grid-row">
+                <div class="grid-col-1of3">
+                  <div class="cart-item-title">
+                    <h4>Slim Fit Chino Pants</h4>
+                  </div>
+                  <div class="cart-img">
+                    <img src="img/mens/pants001 copy.jpg" alt="sweater">
+                  </div>
+                </div>
+
+                <div class="grid-col-2of3">
+                  <form class="cart-items" action="checkout.html">
+                    <div class="cart-description-grid grid-row">
+
+                      <div class="grid-col-1of3">
+                        <div class="cart-item-title">
+                          <div class="sizing-form">
+                            <h4><label for="form-size-1">Size</label></h4>
+                            <div class="select-size">
+                              <select id="form-size-1" name="size" required>
+                                <option value="" selected>Small</option>
+                                <option value="1">Small</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Large</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="grid-col-1of3">
+                        <div class="cart-item-title">
+                          <div class="quantity-form">
+                            <h4><label for="quantity-form">Quantity</label></h4>
+                            <input type="number" id="quantity-form" name="quantity" placeholder="1" min="1" max="10" required>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="grid-col-1of3">
+                        <div class="cart-item-title">
+                          <div class="price-cart">
+                            <h4>Price</h4>
+                          </div>
+                        </div>
+                        <div class="cart-item-description">
+                          <div class="current-price">
+                            <h4>$60.00</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="grid-col-1of1 fixed-description">
+                      <a href=# id="cart-link" class="in-text-link">
+                        Remove From Cart
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!--item 2-->
+
+            <div class="cart-item">
+              <div class="grid-row">
+                <div class="grid-col-1of3">
+                  <div class="cart-item-title">
+                    <h4>Olive Pullover</h4>
+                  </div>
+                  <div class="cart-img">
+                    <img src="img/womens/img002 copy.jpg" alt="denim">
+                  </div>
+                </div>
+
+                <div class="grid-col-2of3">
+                  <form class="cart-items" action="checkout.html">
+                    <div class="cart-description-grid grid-row">
+
+                      <div class="grid-col-1of3">
+                        <div class="cart-item-title">
+
+                          <h4><label for="form-size-2">Size</label></h4>
+                          <div class="select-size">
+                            <select id="form-size-2" name="size" required>
+                              <option value="" selected>Small</option>
+                              <option value="1">Small</option>
+                              <option value="2">Medium</option>
+                              <option value="3">Large</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="grid-col-1of3">
+                        <div class="cart-item-title">
+
+                          <div class="quantity-form">
+                            <h4><label for="quantity-form2">Quantity</label></h4>
+                            <input type="number" id="quantity-form2" name="quantity" placeholder="1" min="1" max="10" required>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="grid-col-1of3">
+                        <div class="cart-item-title">
+                          <div class="price-cart">
+                            <h4>Price</h4>
+                          </div>
+                        </div>
+                        <div class="cart-item-description">
+                          <div class="current-price">
+                            <h4>$42.00</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="grid-col-1of1 fixed-description">
+                      <a href=# id="cart-link" class="in-text-link">
+                        Remove From Cart
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!--end item 2-->
+
+            <div class="grid-col-3of3">
+              <div class="cart-item-description">
+                <div class="total-price">
+                  <h4>Total: $102.00</h4>
+                </div>
+                <a href="checkout.html" class="checkout-proceed">
+                  <input type="submit" class="submit-button" id="submit-cart" value="Proceed To Checkout">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer id="global-footer">
+      <div class="grid-col-1of2">
+        <form method="post" action="#" class="newsletter-form">
+          <label for="email-address">Stay Updated:</label>
+          <input type="text" id="email-address" placeholder="sample@gmail.com">
+          <input type="submit" class="submit-button" value="Submit">
+        </form>
+      </div>
+
       <div class="contact-info">
         <p> info@consciousculture.com</p>
         <p> 604.555.1865</p>

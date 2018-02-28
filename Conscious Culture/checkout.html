@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <title>Conscious Culture</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grids.css">
+  <link rel="stylesheet" href="css/font.css">
+
+</head>
+
+<body>
+  <!-- Main Navigation -->
+  <header id="global-nav">
+    <div class="grid-row">
+      <a href="index.html" id="logo" class="grid-col-2of12">
+        <img src="img/logo.png" alt="Company Logo"></a>
+        <nav class="main-nav">
+          <div class="grid-col-2of12">
+            <a href="mens.html" class="main-nav-item">Mens</a>
+          </div>
+          <div class="grid-col-2of12">
+            <a href="womens.html" class="main-nav-item">Womens</a>
+          </div>
+          <div class="grid-col-2of12">
+            <a href="materials.html" class="main-nav-item">Materials</a>
+          </div>
+          <div class="grid-col-2of12">
+            <a href="about.html" class="main-nav-item">About</a>
+          </div>
+        </nav>
+        <a href="cart.html" id="cart" class="grid-col-2of12">
+          <img src="img/cart.jpg" alt="Cart icon"></a>
+        </div>
+      </header>
+
+
+      <!-- checkout-->
+
+      		<div class="checkout-section">
+      			<div class="grid-row">
+      				<div class="grid-col-2of3">
+
+      					<form class="checkout" action="#">
+      					    <div class="checkout-header">
+      					      <h4 class="checkout-title">
+      					      	Shipping Information
+      					      </h4>
+      					    </div>
+      						<div class="grid-row checkout-name">
+      							<div class="grid-col-1of2">
+      								<label for="form-first-name">First Name</label>
+      						      	<input type="text" id="form-first-name" class="checkout-input" minlength="2" maxlength="20" placeholder="" required>
+      						    </div>
+      						    <div class="grid-col-1of2">
+      								<label for="form-last-name">Last Name</label>
+      						      	<input type="text" id="form-last-name" class="checkout-input" minlength="2" maxlength="20" placeholder="" required>
+      						    </div>
+      						    <div class="grid-col-1of1">
+      								<div>
+      									<label for="form-address-1">Address</label>
+      							      	<input type="text" id="form-address-1" class="checkout-input" minlength="4" maxlength="20" placeholder="" required>
+      							    </div>
+      						    </div>
+      					    	<div class="grid-col-1of2">
+      							    <div>
+      									<label for="form-city">City</label>
+      							      	<input type="text" id="form-city" class="checkout-input" minlength="2" maxlength="20" placeholder="" required>
+      							    </div>
+      						    </div>
+      						    <div class="grid-col-1of2">
+      							    <div>
+      									<label for="form-province">State/Province</label>
+      							      	<input type="text" id="form-province" class="checkout-input" minlength="2" maxlength="20" placeholder="" required>
+      							    </div>
+      						    </div>
+
+      							<div class="grid-col-1of2">
+      							    <div>
+      									<label for="form-postal-code">Postal Code</label>
+      							      	<input type="text" id="form-postal-code" class="checkout-input" minlength="4" maxlength="10" placeholder="" required>
+      							    </div>
+      						    </div>
+      						    <div class="grid-col-1of2">
+      						    	<div>
+      									<label for="form-country">Country</label>
+      									<div class="select-style">
+      										<select id="form-country" name="country" required>
+      											<option value="" disabled selected>Choose Country</option>
+      										    <option value="ca">Canada</option>
+      										    <option value="usa">USA</option>
+      										</select>
+      									</div>
+      								</div>
+      						  	</div>
+
+      							<div class="grid-col-1of2">
+      							   	<div>
+      									<label for="form-phone-number">Phone Number</label>
+      							      	<input type="text" id="form-phone-number" class="checkout-input" maxlength="12" placeholder="" required>
+      							    </div>
+      						    </div>
+      					    	<div class="grid-col-1of2">
+      							    <div>
+      									<label for="form-email">Email</label>
+      							      	<input type="text" class="checkout-input" placeholder="" maxlength="30" required>
+      							    </div>
+      						    </div>
+      					    </div>
+      				  </form>
+      				</div>
+
+              <div class="checkout-section">
+			<div class="grid-row">
+				<div class="grid-col-1of3">
+
+					<form class="checkout" action="#">
+					    <div class="credit-card-info">
+                <div class="checkout-header">
+                  <h4 class="checkout-title">
+                  Billing Information
+                  </h4>
+                </div>
+
+				    		<div class="shorten-input">
+								<label for="form-first-name">Full Name</label>
+					      		<input type="text" id="form-first-name" class="checkout-input" placeholder="" minlength="2" maxlength="35" required>
+					    	</div>
+					    	<div class="shorten-input">
+								<label for="form-card-number">Card Number</label>
+					      		<input type="text" id="form-card-number" class="checkout-input" placeholder="" minlength="12" maxlength="20" required>
+					    	</div>
+
+						    <div class="short">
+								<label for="form-expiry-date-month">Expiry Date</label>
+						      	<input type="text" id="form-expiry-date-month" class="checkout-input" placeholder="MM" maxlength="2" required>
+						      	<label for="form-expiry-date-year"></label>
+						      	<input type="text" id="form-expiry-date-year" class="checkout-input" placeholder="YY" minlength="2" maxlength="4" required>
+
+						    </div>
+						    <div class="short">
+								<label for="form-security-code">Security Code</label>
+						      	<input type="text" id="form-security-code" class="checkout-input" placeholder="CVC" minlength="3" maxlength="3" required>
+						    </div>
+                <a href="index.html" class="checkout-proceed">
+                <input type="submit" class="submit-button" value="Confirm Order"></a>
+						</div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <!-- Footer -->
+            <footer id="global-footer">
+              <div class="grid-col-1of2">
+                <form method="post" action="#" class="newsletter-form">
+                  <label for="email-address">Stay Updated:</label>
+                  <input type="text" id="email-address" placeholder="sample@gmail.com">
+                  <input type="submit" class="submit-button" value="Submit">
+                </form>
+              </div>
+
+              <div class="contact-info">
+                <p> info@consciousculture.com</p>
+                <p> 604.555.1865</p>
+              </div>
+              <p> © 2018 Conscious Culture</p>
+            </footer>
+          </body>
+          </html>
