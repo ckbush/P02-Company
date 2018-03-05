@@ -17,9 +17,31 @@
 	<!-- Main Navigation -->
 	<header id="global-nav">
 		<div class="grid-row">
-			<a href="index.html" id="logo" class="grid-col-2of12">
-				<img src="img/logo.png" alt="Company Logo"></a>
-				<nav class="main-nav">
+
+			<!--MOBILE VERSON-->
+
+			<div class="mobile-nav-mobile">
+
+				<a href="index.html" id="logo-mobile" class="grid-col-2of12">
+					<img src="img/logo.png" alt="Logo"></a>
+
+			<nav class="topnav" id="myTopnav">
+			  <a href="mens.html" class="ham-item" >Mens</a>
+			  <a href="womens.html">Womens</a>
+			  <a href="materials.html">Materials</a>
+			  <a href="about.html">About</a>
+				 <a href="cart.html">Cart</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</nav>
+		</div>
+
+<!-- REGULAR VERSION-->
+			<div class="main-nav-active">
+
+				<a href="index.html" id="logo" class="grid-col-2of12">
+					<img src="img/logo.png" alt="Company Logo"></a>
+
+					<nav class="main-nav">
 					<div class="grid-col-2of12">
 						<a href="mens.html" class="main-nav-item">Mens</a>
 					</div>
@@ -32,9 +54,9 @@
 					<div class="grid-col-2of12">
 						<a href="about.html" class="main-nav-item">About</a>
 					</div>
-				</nav>
 				<a href="cart.html" id="cart" class="grid-col-2of12">
 					<img src="img/cart.jpg" alt="Cart icon"></a>
+					</nav>
 				</div>
 			</header>
 
@@ -169,5 +191,6 @@
 				</div>
 				<p> © 2018 Conscious Culture</p>
 			</footer>
+			<script src="js/hamburger.js"></script>
 		</body>
 		</html>

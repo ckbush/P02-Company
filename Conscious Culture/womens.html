@@ -16,9 +16,31 @@
 	<!-- Main Navigation -->
 	<header id="global-nav">
 		<div class="grid-row">
-			<a href="index.html" id="logo" class="grid-col-2of12">
-				<img src="img/logo.png" alt="Company Logo"></a>
-				<nav class="main-nav">
+
+			<!--MOBILE VERSON-->
+
+			<div class="mobile-nav-mobile">
+
+				<a href="index.html" id="logo-mobile" class="grid-col-2of12">
+					<img src="img/logo.png" alt="Logo"></a>
+
+			<nav class="topnav" id="myTopnav">
+			  <a href="mens.html" class="ham-item" >Mens</a>
+			  <a href="womens.html">Womens</a>
+			  <a href="materials.html">Materials</a>
+			  <a href="about.html">About</a>
+				 <a href="cart.html">Cart</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</nav>
+		</div>
+
+<!-- REGULAR VERSION-->
+			<div class="main-nav-active">
+
+				<a href="index.html" id="logo" class="grid-col-2of12">
+					<img src="img/logo.png" alt="Company Logo"></a>
+
+					<nav class="main-nav">
 					<div class="grid-col-2of12">
 						<a href="mens.html" class="main-nav-item">Mens</a>
 					</div>
@@ -31,23 +53,24 @@
 					<div class="grid-col-2of12">
 						<a href="about.html" class="main-nav-item">About</a>
 					</div>
-				</nav>
 				<a href="cart.html" id="cart" class="grid-col-2of12">
 					<img src="img/cart.jpg" alt="Cart icon"></a>
+					</nav>
 				</div>
 			</header>
 
+
 			<!--Side Navigation-->
-			<div class="products-container">
-				<div class="grid-row">
+
 					<!-- side-nav mobile -->
 					<div class="side-nav-mobile-active">
 						<nav class="side-nav-mobile">
 
-							<div class="side-nav-dropdown side-nav-rect">
-								<h4>SHOP WOMENS</h4>
+							<div class="dropdown">
+
+								<div class="dropbtn" onclick="myFunction2()" >SHOP WOMENS &#9662;</div>
 							</div>
-							<div class="side-nav-dropdown-content">
+							<div id="myDropdown" class="dropdown-content">
 								<a href="#" class="side-nav-item">New Arrivals</a>
 								<a href="#" class="side-nav-item">Sale Items</a>
 								<a href="#" class="side-nav-item">Pants</a>
@@ -61,6 +84,8 @@
 					</div>
 
 					<!-- side-nav regular -->
+					<div class="products-container">
+						<div class="grid-row">
 					<div class="side-nav-active">
 						<div class="grid-col-1of4">
 							<nav class="side-nav">
@@ -76,6 +101,7 @@
 							</nav>
 						</div>
 					</div>
+
 
 					<div class="product-listing">
 						<div class="grid-col-3of4">
@@ -234,5 +260,7 @@
 				</div>
 				<p> © 2018 Conscious Culture</p>
 			</footer>
+			<script src="js/hamburger.js"></script>
+			<script src="js/product-dropdown.js"></script>
 		</body>
 		</html>

@@ -14,33 +14,53 @@
 
 <body>
   <!-- Main Navigation -->
-  <header id="global-nav">
-    <div class="grid-row">
-      <a href="index.html" id="logo" class="grid-col-2of12">
-        <img src="img/logo.png" alt="Company Logo"></a>
-        <nav class="main-nav">
-          <div class="grid-col-2of12">
-            <a href="mens.html" class="main-nav-item">Mens</a>
-          </div>
-          <div class="grid-col-2of12">
-            <a href="womens.html" class="main-nav-item">Womens</a>
-          </div>
-          <div class="grid-col-2of12">
-            <a href="materials.html" class="main-nav-item">Materials</a>
-          </div>
-          <div class="grid-col-2of12">
-            <a href="about.html" class="main-nav-item">About</a>
-          </div>
-        </nav>
-        <a href="cart.html" id="cart" class="grid-col-2of12">
-          <img src="img/cart.jpg" alt="Cart icon"></a>
-        </div>
-      </header>
+	<header id="global-nav">
+		<div class="grid-row">
+
+			<!--MOBILE VERSON-->
+
+			<div class="mobile-nav-mobile">
+
+				<a href="index.html" id="logo-mobile" class="grid-col-2of12">
+					<img src="img/logo.png" alt="Logo"></a>
+
+			<nav class="topnav" id="myTopnav">
+			  <a href="mens.html" class="ham-item" >Mens</a>
+			  <a href="womens.html">Womens</a>
+			  <a href="materials.html">Materials</a>
+			  <a href="about.html">About</a>
+				 <a href="cart.html">Cart</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</nav>
+		</div>
+
+<!-- REGULAR VERSION-->
+			<div class="main-nav-active">
+
+				<a href="index.html" id="logo" class="grid-col-2of12">
+					<img src="img/logo.png" alt="Company Logo"></a>
+
+					<nav class="main-nav">
+					<div class="grid-col-2of12">
+						<a href="mens.html" class="main-nav-item">Mens</a>
+					</div>
+					<div class="grid-col-2of12">
+						<a href="womens.html" class="main-nav-item">Womens</a>
+					</div>
+					<div class="grid-col-2of12">
+						<a href="materials.html" class="main-nav-item">Materials</a>
+					</div>
+					<div class="grid-col-2of12">
+						<a href="about.html" class="main-nav-item">About</a>
+					</div>
+				<a href="cart.html" id="cart" class="grid-col-2of12">
+					<img src="img/cart.jpg" alt="Cart icon"></a>
+					</nav>
+				</div>
+			</header>
+
 
       <!--Cart-->
-      <div class="title">
-        <h2>Cart</h2>
-      </div>
 
       <div class="cart-section">
         <div class="grid-row">
@@ -54,7 +74,7 @@
                     <h4>Slim Fit Chino Pants</h4>
                   </div>
                   <div class="cart-img">
-                    <img src="img/mens/pants001 copy.jpg" alt="sweater">
+                    <img src="img/mens/pants001-copy.jpg" alt="sweater">
                   </div>
                 </div>
 
@@ -100,9 +120,8 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="grid-col-1of1 fixed-description">
-                      <a href=# id="cart-link" class="in-text-link">
+                      <a href=# class="remove-item">
                         Remove From Cart
                       </a>
                     </div>
@@ -120,7 +139,7 @@
                     <h4>Olive Pullover</h4>
                   </div>
                   <div class="cart-img">
-                    <img src="img/womens/img002 copy.jpg" alt="denim">
+                    <img src="img/womens/img002-copy.jpg" alt="denim">
                   </div>
                 </div>
 
@@ -166,9 +185,8 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="grid-col-1of1 fixed-description">
-                      <a href=# id="cart-link" class="in-text-link">
+                      <a href=# class="remove-item">
                         Remove From Cart
                       </a>
                     </div>
@@ -184,15 +202,15 @@
                 <div class="total-price">
                   <h4>Total: $102.00</h4>
                 </div>
-                <a href="checkout.html" class="checkout-proceed">
-                  <input type="submit" class="submit-button" id="submit-cart" value="Proceed To Checkout">
-                </a>
+                <div>
+                <a href="checkout.html" id="submit-cart" class="submit-button"> Proceed To Checkout</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
 
     <!-- Footer -->
     <footer id="global-footer">
@@ -210,5 +228,6 @@
       </div>
       <p> © 2018 Conscious Culture</p>
     </footer>
+    <script src="js/hamburger.js"></script>
   </body>
   </html>
