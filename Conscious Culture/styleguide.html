@@ -1,0 +1,351 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CC Style Guide</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grids.css">
+  <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+  <figure>
+    <img src="img/logo.png" id="logo-stationary" alt="Logo of company">
+  </figure>
+
+  <!-- INTERACTIVE ELEMENTS -->
+
+  <section id="interactive_elements">
+    <h1>Interactive Elements</h1>
+
+    <!-- nav button -->
+    <section>
+
+      <h2>Navigation Button</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.main-nav-item</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="main-nav-item"&gt;About&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="main-nav-item" href="#">About</a>
+
+    </section>
+
+    <!-- in-text link -->
+    <section>
+      <h2>In-text link</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.in-text-link</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="in-text-link"&gt;Lead more&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="in-text-link" href="#">Learn more</a>
+    </section>
+
+    <!-- submit/reset button -->
+    <section>
+      <h2>Submit/Reset Buttons</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.cancel-button<p>
+        <p>.submit-button<p>
+
+          <h3>Sample Code:</h3>
+          <code>
+            &lt;input type="submit" class="cancel-button" value="Cancel"&gt;<br>
+            &lt;input type="submit" class="submit-button" value="Submit"&gt;
+          </code>
+
+          <h3>Rendered Elements:</h3>
+          <input type="submit" class="cancel-button" value="Cancel">
+          <input type="submit" class="submit-button" value="Submit">
+        </section>
+
+        <!-- text input field -->
+        <section>
+          <h2>Text Input Field</h2>
+
+          <h3>CSS selector:</h3>
+          <p>input[type=text]</p>
+
+          <h3>Sample code:</h3>
+          <code>
+            &lt;form&gt;
+            <br>
+            Stay Updated:
+            <br>
+            &lt;label for="sample-form">Stay Updated:&lt;/label&gt;
+            <br>
+            &lt;input type="text" id="sample-form" placeholder="sample@gmail.com"&gt;
+            <br>
+            &lt;/form&gt;
+          </code>
+
+          <h3>Rendered element:</h3>
+          <form>
+            <label for="sample-form">Stay Updated:</label>
+            <input type="text" id="sample-form" placeholder="sample@gmail.com">
+          </form>
+
+        </section>
+
+      </section>
+
+      <!-- TEXT ELEMENTS -->
+      <section id="text-elements">
+        <h1>Text Elements</h1>
+
+        <section>
+          <h2>Headings</h2>
+
+          <h3>Sample code:</h3>
+          <code>
+            &lt;h1&gt;Heading 1&lt;/h1&gt;
+            <br>&lt;h2&gt;Heading 2&lt;/h2&gt;
+            <br>&lt;h3&gt;Heading 3&lt;/h3&gt;
+          </code>
+
+          <h2>Rendered element:</h2>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+        </section>
+
+        <section>
+
+          <h2>Paragraphs</h2>
+
+          <h3>Sample code:</h3>
+          <code>&lt;p&gt;Conscious Culture takes a modern approach to sustainable and organic clothing. All the products are made from natural materials such as bamboo, hemp or organic cotton, with the goal of minimising our environmental footprint.&lt;/p&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <p class="paragraph-text">Conscious Culture takes a modern approach to sustainable and organic clothing. All the products are made from natural materials such as bamboo, hemp or organic cotton, with the goal of minimising our environmental footprint.</p>
+        </section>
+
+        <section>
+          <h2>Lists</h2>
+
+          <h3>CSS selector:</h3>
+          <p>ul, li</p>
+
+          <h3>Sample code:</h3>
+          <code>
+            &lt;ul&gt;
+            <br>
+            &lt;li&gt;Organic Cotton&lt;/li&gt;
+            <br>
+            &lt;li&gt;Bamboo&lt;/li&gt;
+            <br>
+            &lt;li&gt;Hemp&lt;/li&gt;
+            <br>
+            &lt;/ul&gt;
+          </code>
+
+          <h3>Rendered element:</h3>
+          <ul>
+            <li>Organic Cotton</li>
+            <li>Bamboo</li>
+            <li>Hemp</li>
+          </ul>
+
+        </section>
+
+      </section>
+
+
+      <!-- COMBINED ELEMENTS -->
+      <section id="combined-elements">
+        <h1>Combined Elements</h1>
+
+        <section>
+
+          <h2>Full Navigation</h2>
+
+          <div id="global-nav">
+            <div class="grid-row">
+
+              <!--mobile nav-->
+
+              <div class="mobile-nav-mobile">
+
+                <a href="index.html" id="logo-mobile" class="grid-col-2of12">
+                  <img src="img/logo.png" alt="Logo"></a>
+
+                  <nav class="topnav" id="myTopnav">
+                    <a href="mens.html" class="ham-item" >Mens</a>
+                    <a href="womens.html">Womens</a>
+                    <a href="materials.html">Materials</a>
+                    <a href="about.html">About</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                  </nav>
+                </div>
+
+                <!-- regular nav-->
+                <div class="main-nav-active">
+
+                  <a href="#" id="logo" class="grid-col-2of12">
+                    <img src="img/logo.png" alt="Company Logo"></a>
+
+                    <nav class="main-nav">
+                      <div class="grid-col-2of12">
+                        <a href="#" class="main-nav-item">Mens</a>
+                      </div>
+                      <div class="grid-col-2of12">
+                        <a href="#" class="main-nav-item">Womens</a>
+                      </div>
+                      <div class="grid-col-2of12">
+                        <a href="#" class="main-nav-item">Materials</a>
+                      </div>
+                      <div class="grid-col-2of12">
+                        <a href="#" class="main-nav-item">About</a>
+                      </div>
+                      <a href="#" id="cart" class="grid-col-2of12">
+                        <img src="img/cart.jpg" alt="Cart icon"></a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+
+
+                </section>
+
+                <section>
+
+                  <h2>Product Listing</h2>
+
+                  <div class="product-listing-suggested">
+                    <div class="grid-row">
+
+                      <div class="grid-col-1of4">
+                        <div class="product-img">
+                          <a href="#"><img class="main-img" src="img/mens/img07-07.jpg" alt="product"></a>
+                        </div>
+
+                        <div class="product-caption">
+                          <a href="#" class="product-name">Shortsleeve Tee</a>
+                          <div class="pricing">$52.00</div>
+                        </div>
+                      </div>
+
+
+                      <div class="grid-col-1of4">
+                        <div class="product-img">
+                          <a href="#"><img class="main-img" src="img/mens/img02-02.jpg" alt="product"></a>
+                        </div>
+
+                        <div class="product-caption">
+                          <a href="#" class="product-name">Midweight Crewneck</a>
+                          <div class="pricing">$84.00</div>
+                        </div>
+                      </div>
+
+                      <div class="grid-col-1of4">
+                        <div class="product-img">
+                          <a href="#"><img class="main-img" src="img/mens/img03-03.jpg" alt="product"></a>
+                        </div>
+
+                        <div class="product-caption">
+                          <a href="#" class="product-name">Straight Fit Jeans</a>
+                          <div class="pricing">$32.00</div>
+                        </div>
+                      </div>
+
+                      <div class="grid-col-1of4">
+                        <div class="product-img">
+                          <a href="#"><img class="main-img" src="img/mens/img06-06.jpg" alt="product"></a>
+                        </div>
+
+                        <div class="product-caption">
+                          <a href="#" class="product-name">Tapered Fit Chino Pants</a>
+                          <div class="pricing">$60.00</div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+                  </section>
+
+                  <section>
+
+                    <h2>Colour Swatches</h2>
+
+                    <div class="colour-palette">
+                      <div class ="grid-row">
+                        <div class="grid-col-1of2">
+                          <figure>
+                            <img src="img/colours.png" alt="Colour palette">
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+
+                  </section>
+
+                  <section>
+                    <h2>Grids</h2>
+
+                    <div class="sample-grids">
+                      <div class="grid-row">
+                        <div class="grid-col-1of1">
+                          <p class="grid-structure">1 of 1</p>
+                        </div>
+                      </div>
+
+                      <div class="grid-row">
+                        <div class="grid-col-1of2">
+                          <p class="grid-structure">1 of 2</p>
+                        </div>
+                        <div class="grid-col-1of2">
+                          <p class="grid-structure">1 of 2</p>
+                        </div>
+                      </div>
+
+                      <div class="grid-row">
+                        <div class="grid-col-1of3">
+                          <p class="grid-structure">1 of 3</p>
+                        </div>
+                        <div class="grid-col-1of3">
+                          <p class="grid-structure">1 of 3</p>
+                        </div>
+                        <div class="grid-col-1of3">
+                          <p class="grid-structure">1 of 3</p>
+                        </div>
+                      </div>
+
+                      <div class="grid-row">
+                        <div class="grid-col-1of4">
+                          <p class="grid-structure">1 of 4</p>
+                        </div>
+                        <div class="grid-col-1of4">
+                          <p class="grid-structure">1 of 4</p>
+                        </div>
+                        <div class="grid-col-1of4">
+                          <p class="grid-structure">1 of 4</p>
+                        </div>
+                        <div class="grid-col-1of4">
+                          <p class="grid-structure">1 of 4</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </section>
+
+                </section>
+
+
+              </body>
+
+              </html>

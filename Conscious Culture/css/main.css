@@ -1,4 +1,3 @@
-/*General*/
 body {
 	font-family: "Circular Std", sans-serif;
 	font-size: 1em;
@@ -6,40 +5,60 @@ body {
 	margin: 1em 6% 0;
 }
 
-section {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	padding-bottom: 1.5em;
-	border-top: 0.05em solid #303030;
-}
-
 p {
-	font-size: 0.8em;
-	font-weight: normal;
+	font-size: 0.75em;
+	letter-spacing: 0.05rem;
+	line-height: 1.25em;
+	font-weight: 300;
+	font-family: helvetica, sans-serif;
+	opacity: 0.8;
 }
 
 a {
 	text-decoration: none;
 }
 
-section h1 {
-	font-family: "Circular Std", helvetica, sans-serif;
-	font-size: 1.5rem;
+ul{
+	font-size: 0.8em;
+	letter-spacing: 0.05rem;
+	font-weight: 300;
+	font-family: helvetica, sans-serif;
+	opacity: 0.7;
 }
 
-section h2 {
-	font-family: "Circular Std", helvetica, sans-serif;
-	font-size: 1.25rem;
-	width: 100%;
+section {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-bottom: 1.5em;
+	border-top: 0.05em solid grey;
 }
 
-section h3 {
-	font-family: Helvetica, serif;
-	font-size: 1.1em;
+section code {
+	display: block;
+	background-color: #EEE;
+	padding: 0.5em 0.75em;
+}
+
+h1 {
+	font-family: "Circular Std", helvetica, sans-serif;
+	font-size: 1.4em;
+	letter-spacing: 0.03em;
+}
+
+h2 {
+	font-family: "Circular Std", helvetica, sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: "Circular Std", helvetica, sans-serif;
+	font-size: 0.9em;
 	letter-spacing: 0.07em;
 }
 
-section h4 {
+h4 {
 	font-family: "Circular Std", helvetica, sans-serif;
 	font-size: 0.8em;
 	letter-spacing: 0.07em;
@@ -71,6 +90,16 @@ figcaption {
 	text-decoration: underline;
 }
 
+#project-link1, #project-link2 {
+	font-size: 0.75em;
+	letter-spacing: 0.05rem;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-weight: 300;
+	font-family: helvetica, sans-serif;
+	opacity: 0.6;
+}
+
 .remove-item {
 	font-size: 0.9em;
 	color: black;
@@ -81,8 +110,7 @@ figcaption {
 	opacity: 0.5;
 }
 
-
-/* Styling for Navigation Button */
+/* Navigation */
 
 .main-nav{
 	text-align: center;
@@ -115,7 +143,7 @@ figcaption {
 	padding: 1em;
 }
 
-.side-nav h4{
+.side-nav h3{
 	padding-left: 0.4em;
 }
 
@@ -140,46 +168,38 @@ figcaption {
 	font-weight: bold;
 }
 
-/*MOBILE*/
 
-/* Dropdown Button */
+/* Mobile Dropdown  */
 .dropbtn {
 	background-color: white;
 	padding-top: 1.5em;
 	padding-left: 2em;
 	padding-bottom: 0em;
-cursor: pointer;
+	cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
 	opacity: 0.5;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
 	display: none;
 	padding: 0.6em 1em;
 	margin: 0.5em 1em;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
-    display: block;
-
+	display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
 	display:block;
 }
@@ -188,6 +208,10 @@ cursor: pointer;
 /*Product List*/
 .product-img, .product-img-main {
 	position: relative;
+}
+
+#large-image{
+	padding-bottom: 0.7em;
 }
 
 .main-img {
@@ -225,9 +249,10 @@ cursor: pointer;
 }
 
 .product-name{
-	font-size: 0.9em;
+	font-size: 0.85em;
+	letter-spacing: 0.04em;
 	color: black;
-	font-weight: normal;
+	font-weight: 300;
 	margin-bottom: 0;
 	text-align: center;
 	text-decoration: none;
@@ -238,15 +263,17 @@ cursor: pointer;
 }
 
 .product-details .pricing {
-	font-size: 1.5em;
+	font-size: 1em;
 	text-align: center;
+	padding-bottom: 1em;
 }
 
-.description-title h4{
+.description-title h3{
 	font-family: "Circular Std", Helvetica, sans-serif;
 	font-size: 0.9em;
 	margin-top: 0;
 	margin-bottom: 0.5em;
+	padding-bottom: 1em;
 	letter-spacing: 0.07em;
 }
 
@@ -294,28 +321,27 @@ cursor: pointer;
 	padding: 0 1em 1em 1em;
 }
 
-.price-cart h4{
+.price-cart h3{
 	margin-top: 1em;
 	font-size: 1.1em;
 	display: block;
-
 	font-weight: 500;
 
 }
 .all-cards .cancel-button{
 	float: right;
 	margin: 1em;
-    font-size: 0.9em;
-    font-weight: bold;
+	font-size: 0.9em;
+	font-weight: bold;
 }
 
-.cart-item-title h4{
+.cart-item-title h3{
 	margin: 0 0 1em 0;
 	text-align: center;
 	font-size: 0.9em;
 }
 
-.cart-item-description h4{
+.cart-item-description h3{
 	width: 100%;
 	height: 50%;
 	margin: 1em 0 0 0;
@@ -326,7 +352,7 @@ cursor: pointer;
 	border: 1px solid #f1f1f1;
 }
 
-.fixed-description h4{
+.fixed-description h3{
 	display: inline-block;
 	margin: 0;
 	padding: 0;
@@ -335,30 +361,28 @@ cursor: pointer;
 	font-weight: normal;
 }
 
-.cart-item-description .current-price h4{
+.cart-item-description .current-price h3{
 	border: none;
 	font-size: 1em;
 	text-align: center;
 }
 
-.total-price h4{
+.total-price h3{
 	border: none;
 	font-size: 1em;
 	padding-right: 4em;
 	text-align: right;
 }
 
-
-
 .cart-items-final{
 	font-size: 0.9em;
 }
 
-.cart-items-final-title h4{
+.cart-items-final-title h3{
 	padding: 0.5em 0;
-    margin: 0 0 1em 0;
-    text-align: center;
-    border-bottom: 1px solid #000;
+	margin: 0 0 1em 0;
+	text-align: center;
+	border-bottom: 1px solid #000;
 }
 
 .cart-items-final-title p {
@@ -371,13 +395,13 @@ cursor: pointer;
 }
 
 .review-img .grid-col-1of1{
-    margin: 1em 0 0 0;
-    padding: 0;
+	margin: 1em 0 0 0;
+	padding: 0;
 }
 
-.review-img h4{
-    font-size: 0.9em;
-    margin: 0;
+.review-img h3{
+	font-size: 0.9em;
+	margin: 0;
 	padding: 0 0 0.5em 0;
 }
 
@@ -403,7 +427,7 @@ cursor: pointer;
 }
 
 
-/* Styling for Forms and Submit */
+/* Forms and Submit */
 
 .submit-button {
 	display: inline-block;
@@ -414,10 +438,19 @@ cursor: pointer;
 	border: 1px solid black;
 }
 
+#product-submit {
+	margin-top: 0.5em;
+}
+
+#review-submit, #review-cancel {
+	float: right;
+	margin-left: 1em;
+}
+
 .cancel-button {
-	display: block;
-	width: 300px;
+	display: inline-block;
 	margin: 1em 0;
+	width: auto;
 	padding: 0.8em 2em;
 	color: grey;
 	background-color: white;
@@ -436,6 +469,7 @@ cursor: pointer;
 
 #submit-cart{
 	float: right;
+	text-align: center;
 }
 
 select {
@@ -465,10 +499,8 @@ select {
 
 .product-detail-title {
 	text-align: center;
-	font-size: 1.4em;
-	letter-spacing: 0.05em;
 	margin-bottom: 0.5em;
-	margin-top: 0;
+	margin-top: 0em;
 }
 
 .selection-region {
@@ -505,13 +537,23 @@ option:checked {
 	border-bottom: 1.3px solid #dedede;
 }
 
-#logo{
+#logo {
 	margin:0;
 	text-decoration: none;
 	color: black;
 	height: auto;
 	width: 200px;
 	padding: 1rem 0.4em;
+	padding-top: 0.25rem;
+}
+
+#logo-stationary{
+	margin:0;
+	text-decoration: none;
+	color: black;
+	height: auto;
+	width: 200px;
+	padding: 1rem 0em;
 	padding-top: 0.25rem;
 }
 
@@ -562,27 +604,6 @@ option:checked {
 	padding: 0.7rem 1em;
 }
 
-.secondary-nav {
-	position: absolute;
-	right: 0;
-}
-
-.secondary-nav-test{
-	position: relative;
-	height: 60px;
-	margin-top: 0.5em;
-}
-
-.secondary-nav-test{
-	position: absolute;
-	transform: translateX(-50%);
-	left: 50%;
-}
-
-.secondary-nav-item {
-	float: left;
-}
-
 /*Footer */
 #global-footer {
 	border: none;
@@ -599,7 +620,12 @@ option:checked {
 
 .contact-info{
 	font-family: helvetica, Sans-serif;
-	font-weight: 300;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+}
+
+.copywrite-info p{
+	font-weight: 500;
 	letter-spacing: 0.08em;
 }
 
@@ -608,17 +634,28 @@ option:checked {
 	width: 100%;
 }
 
- #email-address{
-font-family: helvetica, Sans-serif;
-font-weight: 300;
-font-size: 0.8em;
-letter-spacing: 0.08em;
+#email-address{
+	font-family: helvetica, Sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	letter-spacing: 0.08em;
 	margin: 0 1em 0 0;
 	padding: 16px;
 	width: 75%;
 	height: 35px;
 	border: 0.5px solid #C0C0C0;
+}
 
+#sample-form{
+	font-family: helvetica, Sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	letter-spacing: 0.08em;
+	margin: 0 1em 0 0;
+	padding: 16px;
+	width: 200px;
+	height: 14px;
+	border: 0.5px solid #C0C0C0;
 }
 
 /*Home Page*/
@@ -658,7 +695,14 @@ letter-spacing: 0.08em;
 /* Featured Section */
 #featured {
 	border: none;
-	margin-top: 2em;
+	margin-top: 0.7em;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
+#row1-featured {
+	border: none;
+	padding-top: 1.5em;
 	margin-left: 0em;
 	margin-right: 0em;
 }
@@ -702,231 +746,39 @@ letter-spacing: 0.08em;
 	transform: translateY(-50%);
 }
 
-.featured-item p {
-	font-size: 1.2rem;
+.featured-item p, .featured-content p {
+	font-size: 1.15em;
+	font-family: "Circular Std", sans-serif;
 	font-weight: bold;
 	letter-spacing: 0.05rem;
 	position: relative;
 }
 
-/* Reviews */
+/* Reviews on Product Page*/
 
-.customer-reviews h4 {
-	font-family: "Circular Std", sans-serif;
-	font-size: 0.9em;
+.customer-reviews h3 {
 	margin-top: 2em;
 	margin-bottom: 0.5em;
-	letter-spacing: 0.07em;
 }
 
 .product-stars{
 	color: #aac1be;
-	font-size: 2em;
-	padding-top: 0.5em;
+	font-size: 1.5em;
+	padding: 0.1em;
+	letter-spacing: 0.2em;
 }
 
-/*Checkout*/
-.checkout {
-	margin: 1em;
-	padding-top: 1em;
-}
-.checkout-input {
-	width:100%;
-	font-family: helvetica;
-	font-weight: 300;
-	font-size: 0.8em;
-	letter-spacing: 0.08em;
-	border: 1px solid #dedede;
-	margin: 0 1em 0 0;
-	padding: 16px;
-	width: 100%;
-	height: 25px;
-
+.write-review {
+	margin-top: 2em;
+	opacity: 0.7;
 }
 
-.checkout label {
-	display: block;
-	padding: 0.5em 0 0.5em 0;
-	font-size: 0.9em;
-	font-weight: 500;
-	font-family: helvetica, sans-serif;
-	letter-spacing: 0.07em;
-}
-
-.checkout-name .grid-col-1of2, .checkout-name .grid-col-1of1{
-	padding: 0 1em 1em 0;
-}
-
-.checkout .select-size {
-	height: 35px;
-	font-size: 0.9em;
-	font-weight: 500;
-	font-family: helvetica;
-	letter-spacing: 0.07em;
-	width: 100%;
-	border-radius: 0;
-}
-
-.checkout-title {
-	border-bottom: 1px solid black;
-	padding-bottom: 0.2em;
-	font-family: "Circular Std", sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 0.03em;
-}
-
-.checkout .submit-button, .checkout .cancel-button {
-	width: 100%;
-}
-
-label[for=form-card-number] {
-	padding-top: 0;
-}
-
-.credit-card-info {
-	padding-bottom: 2em;
-}
-
-.credit-card-info h4{
-	margin-bottom: 0;
-}
-
-.credit-card-info .short input[type=text] {
-	width: 100%;
-	display: inline-block;
-	border: 1px solid #dedede;
-	padding: 16px;
-	width: 100%;
-	height: 25px;
-}
-
-.shorten-input1 {
-padding-top: 2.5em;
-}
-
-.shorten-input2 {
-padding-top: 0.3em;
-}
-
-.short2 {
-padding-top: 0.65em;
-}
-
-.top-row{
-	padding-top: 1.5em;
-}
-
-label[for=form-expiry-date-year]{
-	display: inline-block;
-}
-
-
-
-input[type=checkbox]{
-	margin-right: 0.5em;
-}
-
-
-
-.billing-address-form {
-	display: none;
-}
-
-.billing-address-section p {
-	font-weight: normal;
-	font-size: 1em;
-}
-
-.shorten-input input[type=text]{
-	width: 100%;
-}
-
-.cart-review {
-	font-size: 0.9em;
-}
-
-
-.checkout-review h3 {
-	font-size: 0.9em;
-}
-
-.checkout-review h2 {
-	font-size: 1.35em;
-}
-.checkout-review p {
-	margin: 1em 0;
-}
-
-.checkout-review .text-link{
-	opacity: 0.4;
-}
-
-.required-field .grid-col-1of1{
-	margin:0;
-}
-
-
-/*order complete*/
-
-.thanks-img img{
-	padding-top: 3em;
-	width: 70px;
-}
-
-.order-confirmation {
-	margin: 0 20%;
-	text-align: center;
-
-}
-
-.order-confirmation .button, .order-confirmation .secondary-button{
-	margin: 1em;
-}
-
-.order-confirmation p {
-	padding-bottom: 2em;
-}
-
-.order-confirmation .text-link{
-	opacity: 0.4;
-	color: #000;
-}
-
-
-/* About */
-
-.about-img{
-	position: relative;
-	margin-top: 1.5em;
-	width: 100%;
-}
-
-.about-content{
-	font-family: Helvetica, sans-serif;
-	position: relative;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	font-size: 1em;
-	letter-spacing: 0.05rem;
-	line-height: 1.25em;
-	text-align:left;
-	font-weight: 300;
-}
-
-.about-title{
-	font-family: Helvetica, sans-serif;
-	text-align:center;
-	font-size: 1em;
-	padding-bottom: 0;
-	letter-spacing: 0.05rem;
-	line-height: 1.25em;
-	font-weight: 300;
+.compose-review {
+	margin: 2em;
+	padding-left: 2em;
 }
 
 /*write reviews*/
-
 
 .add-review .grid-col-1of1{
 	margin: 1em 0 0 0;
@@ -948,15 +800,31 @@ textarea{
 	height: 150px;
 	max-width: 100%;
 	max-height: 300px;
-	border: 0.5px solid black;
 	color: black;
-	padding: 5px;
 	outline: none;
+	margin-top: 1em;
+	font-family: helvetica, Sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	letter-spacing: 0.05em;
 }
 
 .add-review .submit-button, .add-review .cancel-button{
 	float: right;
 	margin: 1em;
+}
+
+#form-name{
+	font-family: helvetica, Sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	letter-spacing: 0.05em;
+	padding: 0.5em;
+}
+
+.review-title {
+	padding-top: 2em;
+	text-align: center;
 }
 
 
@@ -981,7 +849,7 @@ textarea{
 	padding-left: 1em
 }
 
-.review-description h4 {
+.review-description h3 {
 	margin: 0.5em 0;
 }
 
@@ -989,118 +857,357 @@ textarea{
 	margin-bottom: 1em;
 }
 
+#select-rating {
+	padding-top: 1em;
+	display: block;
+}
+
 div.stars {
-  display: inline-block;
+	display: inline-block;
 }
 
 input.star {
-	display: none; }
+	display: none;
+	margin-top: 2em;
+}
 
 label.star {
-  float: right;
-  padding: 0.1em;
-  font-size: 2em;
-  color: grey;
-  transition: all .25s;
+	float: right;
+	padding: 0.1em;
+	font-size: 1.8em;
+	color: grey;
+	transition: all .25s;
 }
 
 input.star:checked ~ label.star:before {
-  content: '\2605';
-  color: #aac1be;;
-  transition: all .25s;
+	content: '\2605';
+	color: #aac1be;;
+	transition: all .25s;
 }
 
 input.star-5:checked ~ label.star:before {
-  color: #aac1be;
+	color: #aac1be;
 }
 
 input.star-1:checked ~ label.star:before {
 	color: #aac1be; }
 
-label.star:hover {
-	transform: rotate(-15deg) scale(1.3);
-	color: darkgrey;
- }
+	label.star:hover {
+		transform: rotate(-15deg) scale(1.3);
+		color: darkgrey;
+	}
 
-label.star:before {
-  content: '\2605';
+	label.star:before {
+		content: '\2605';
+	}
+
+/*Checkout*/
+.checkout {
+	margin: 1em;
+	padding-top: 1em;
+}
+.checkout-input {
+	width:100%;
+	font-family: helvetica;
+	font-weight: 300;
+	font-size: 0.8em;
+	letter-spacing: 0.08em;
+	border: 1px solid #dedede;
+	margin: 0 1em 0 0;
+	padding: 16px;
+	width: 100%;
+	height: 25px;
+}
+
+.checkout label {
+	display: block;
+	padding: 0.5em 0 0.5em 0;
+	font-size: 0.9em;
+	font-weight: 500;
+	font-family: helvetica, sans-serif;
+	letter-spacing: 0.07em;
+}
+
+.checkout-first-last .grid-col-1of2, .checkout-first-last .grid-col-1of1{
+	padding: 0 1em 1em 0;
+}
+
+.checkout .select-size {
+	height: 35px;
+	font-size: 0.9em;
+	font-weight: 500;
+	font-family: helvetica;
+	letter-spacing: 0.07em;
+	width: 100%;
+	border-radius: 0;
+}
+
+.checkout-title {
+	border-bottom: 1px solid black;
+	padding-bottom: 0.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+}
+
+.checkout .submit-button, .checkout .cancel-button {
+	width: 100%;
+}
+
+label[for=form-card-number] {
+	padding-top: 0;
+}
+
+label[for=form-card-number] {
+	padding-top: 0;
+}
+
+.credit-card-info {
+	padding-bottom: 2em;
+}
+
+.credit-card-info h3{
+	margin-bottom: 0;
+}
+
+.credit-card-info .short input[type=text] {
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #dedede;
+	padding: 16px;
+	width: 100%;
+	height: 25px;
+}
+
+.shorten-input1 {
+	padding-top: 1.5em;
+}
+
+.shorten-input2 {
+	padding-top: 0.3em;
+}
+
+.short2 {
+	padding-top: 0.65em;
+}
+
+.top-row{
+	padding-top: 1.5em;
+}
+
+label[for=form-expiry-date-year]{
+	display: inline-block;
+}
+
+input[type=checkbox]{
+	margin-right: 0.5em;
+}
+
+.billing-address-form {
+	display: none;
+}
+
+.billing-address-section p {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.shorten-input input[type=text]{
+	width: 100%;
+}
+
+.cart-review {
+	font-size: 0.9em;
+}
+
+.checkout-review h3 {
+	font-size: 0.9em;
+}
+
+.checkout-review h2 {
+	font-size: 1em;
+}
+.checkout-review p {
+	margin: 1em 0;
+}
+
+.checkout-review .text-link{
+	opacity: 0.4;
+}
+
+.required-field .grid-col-1of1{
+	margin:0;
+}
+
+/*order complete*/
+
+.center-title{
+	padding-top: 4em;
+	text-align: center;
+}
+
+#shopping-button{
+	margin-bottom: 3em;
+}
+
+.receipt-info{
+	padding-top: 0.1em;
+}
+
+.product-listing-suggested {
+	padding-bottom: 2em;
+}
+
+.order-confirmation {
+	margin: 0 20%;
+	text-align: center;
+}
+
+.about-tencel {
+	text-align: center;
+}
+
+.order-confirmation .button{
+	margin: 1em;
+}
+
+.order-confirmation p {
+	padding-bottom: 2em;
+}
+
+.order-confirmation .text-link{
+	opacity: 0.4;
+	color: #000;
 }
 
 
-/*Hamburger Menu Navigation*/
-.mobile-nav-mobile {
-	list-style-type: none;
-	padding-bottom: 1.5em;
+/* About Company*/
+
+.about-img{
+	position: relative;
+	margin-top: 1.5em;
+	padding: 0.7em;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-    overflow: hidden;
+.about-banner {
+	margin: 0;
+	position: relative;
+	width: 100%;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.about-banner img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.about-content {
+	font-family: Helvetica, sans-serif;
+	position: relative;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	font-size: 1em;
+	letter-spacing: 0.05rem;
+	line-height: 1.25em;
+	text-align:left;
+	font-weight: 300;
+}
+
+#about-paragraph{
+	padding-bottom: 2em;
+}
+
+.about-title{
+	text-align:center;
+	padding-top: 1.8em;
+	padding-bottom: 0em;
+	line-height: 1.25em;
+}
+
+	/*Hamburger Menu Navigation*/
+	.mobile-nav-mobile {
+		list-style-type: none;
+		padding-bottom: 1.5em;
+	}
+
+	.topnav {
+		overflow: hidden;
+	}
+
+	.topnav a {
 		padding-top: 1em;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
 		font-size: 0.9em;
 		letter-spacing: 0.08rem;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    opacity: 0.5;
-}
-
-/* Add an active class to highlight the current page */
-.active {
-    color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 55em) {
-  .topnav a{
-		display: none;
-		float: center;
 	}
-  .topnav a.icon {
-    float: right;
-    display: block;
-		padding-top: 1.5em;
-		padding-bottom: 0.5em;
-  }
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 55em) {
-  .topnav.responsive {
-		position: relative;
-	float: center;
-}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+	.topnav a:hover {
+		opacity: 0.5;
+	}
 
-	.topnav.responsive a.ham-item {
-		margin-top: 4em;
-    position: relative;
-    right: 0;
-    top: 0;
-  }
+	.active {
+		color: white;
+	}
 
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-}
+	.topnav .icon {
+		display: none;
+	}
+
+	@media screen and (max-width: 55em) {
+		.topnav a{
+			display: none;
+
+		}
+		.topnav a.icon {
+			float: right;
+			display: block;
+			padding-top: 1.5em;
+			padding-bottom: 0.5em;
+		}
+	}
+
+	@media screen and (max-width: 55em) {
+		.topnav.responsive {
+			position: relative;
+
+		}
+		.topnav.responsive a.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.topnav.responsive a.ham-item {
+			margin-top: 4em;
+			position: relative;
+			right: 0;
+			top: 0;
+		}
+
+		.topnav.responsive a {
+			float: none;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	/*Grids*/
+
+	.grid-structure {
+		background-color: #d1d3d4;
+		text-align: center;
+		padding: 1em;
+		margin: 1em;
+	}
+
+	/*Citations*/
+
+	.citation-section{
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}

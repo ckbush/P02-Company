@@ -1,23 +1,22 @@
-*, *::after, *::before {
-	box-sizing: border-box;
-}
-
 [class^='grid-col-'] {
 	float: left;
 	padding: 0.5em;
 	width: 100%;
 }
 
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
 #submit-cart{
 	float: none;
-  width: 100%;
+	width: 100%;
 }
 
 .total-price h4{
 	text-align: center;
 	padding-right: 0em;
 }
-
 
 .grid-row::after {
 	content: "";
@@ -26,27 +25,31 @@
 }
 
 .grid-col-1of2{
-		width: 50%;
-	}
+	width: 50%;
+}
 
-	#global-footer .grid-col-1of2{
-			width: 100%;
-		}
+#global-footer .grid-col-1of2{
+	width: 100%;
+}
 
-	.mobile-nav-mobile {
-		display: block;
-	}
+.mobile-nav-mobile {
+	display: block;
+}
 
-	.main-nav {
-		display: none;
-	}
+.main-nav {
+	display: none;
+}
 
-	#logo{
-		display: none;
-	}
+#logo{
+	display: none;
+}
 
 .home-banner{
 	height: 300px;
+}
+
+.about-banner{
+	height: 200px;
 }
 
 .featured-item {
@@ -73,16 +76,14 @@
 	width: 25%;
 }
 
-
-.checkout-section .submit-button, .checkout-section .cancel-button, .checkout-section .secondary-button {
+.checkout-details .submit-button, .checkout-details .cancel-button {
 	width:100%;
-
 	text-align: center;
 }
 
 .cart-card .grid-col-1of4{
-		width: 25%;
-	}
+	width: 25%;
+}
 
 .order-confirmation {
 	margin: 0 2em;
@@ -108,6 +109,22 @@
 	display: none;
 }
 
+.sample-grids .grid-col-1of4{
+	width: 25%;
+}
+
+.sample-grids .grid-col-1of3{
+	width: 33.3%;
+}
+
+.colour-palette .grid-col-1of2{
+	width: 100%;
+}
+
+.email-label{
+	padding-bottom: 1em;
+}
+
 @media (min-width: 30em){
 
 	.side-nav-mobile-active{
@@ -116,14 +133,6 @@
 
 	.side-nav-active {
 		display: none;
-	}
-
-	#global-footer .grid-col-1of2{
-			width: 50%;
-		}
-
-	.add-gift-card .secondary-button {
-		margin:0;
 	}
 
 	.grid-col-1of4 {
@@ -162,11 +171,6 @@
 		width: 50%;
 	}
 
-	.center-container{
-		width: 70%;
-		margin:0 auto;
-	}
-
 	#submit-cart{
 		float: right;
 		width: auto;
@@ -177,8 +181,10 @@
 		padding-right: 4em;
 	}
 
+	.about-banner{
+		height: 275px;
+	}
 }
-
 
 @media (min-width: 40em){
 
@@ -221,6 +227,15 @@
 	.product-listing-suggested .grid-col-1of4 {
 		width: 25%;
 	}
+
+	#global-footer .grid-col-1of2{
+		width: 50%;
+	}
+
+	.center-container{
+		width: 66%;
+		margin:0 auto;
+	}
 }
 
 @media (min-width: 55em){
@@ -238,7 +253,11 @@
 	}
 
 	.home-banner {
-		height: 370px;
+		height: 33vw;
+	}
+
+	.about-banner {
+		height: 33vw;
 	}
 
 	.featured-container .grid-col-1of2{
@@ -296,17 +315,16 @@
 	.about-container .grid-col-1of2 {
 		width: 50%;
 	}
-}
 
+	.colour-palette .grid-col-1of2{
+		width: 50%;
+	}
+}
 
 @media (min-width: 65em) {
 
 	.product-listing .grid-col-1of4 {
 		width: 25%;
-	}
-
-	.home-banner {
-		height: 33vw;
 	}
 
 	.grid-col-1of12{
@@ -325,8 +343,10 @@
 		width: 66.6666667%;
 	}
 
+	.email-label{
+		padding-bottom: 0em;
+	}
 }
-
 
 @media (min-width: 75em) {
 
