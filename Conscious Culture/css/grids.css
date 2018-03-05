@@ -37,6 +37,19 @@
 		display: block;
 	}
 
+<<<<<<< HEAD
+	.main-nav {
+		display: none;
+	}
+
+	#logo{
+		display: none;
+=======
+	.mobile-nav-mobile {
+		display: block;
+>>>>>>> master
+	}
+
 	.main-nav {
 		display: none;
 	}
