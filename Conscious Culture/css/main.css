@@ -545,6 +545,10 @@ option:checked {
 	width: 200px;
 	padding: 1rem 0.4em;
 	padding-top: 0.25rem;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 }
 
 #logo-stationary{
@@ -568,6 +572,10 @@ option:checked {
 	padding-top: 0.25rem;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> master
 #logo:hover, #logo-mobile:hover{
 	opacity: 0.5;
 }
@@ -1013,6 +1021,17 @@ input[type=checkbox]{
 
 .shorten-input input[type=text]{
 	width: 100%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+}
+
+.item-summary h3 {
+	font-size: 1em;
+	margin: 3em 0 0 1em;
+>>>>>>> master
+>>>>>>> master
 }
 
 .cart-review {
