@@ -28,6 +28,7 @@
 	width: 50%;
 }
 
+<<<<<<< HEAD
 #global-footer .grid-col-1of2{
 	width: 100%;
 }
@@ -35,6 +36,20 @@
 .mobile-nav-mobile {
 	display: block;
 }
+=======
+<<<<<<< HEAD
+	.main-nav {
+		display: none;
+	}
+
+	#logo{
+		display: none;
+=======
+	.mobile-nav-mobile {
+		display: block;
+>>>>>>> master
+	}
+>>>>>>> master
 
 .main-nav {
 	display: none;

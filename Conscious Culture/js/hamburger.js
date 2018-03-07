@@ -1,5 +1,12 @@
 'use strict';
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+>>>>>>> master
+>>>>>>> master
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
